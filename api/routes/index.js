@@ -4,6 +4,7 @@ module.exports = function(app) {
 
   // tutorial Routes
   app.route('/tutorials')
+    .post(tutorial.create)
     .get(tutorial.findAll)
     .delete(tutorial.deleteAll);
 
